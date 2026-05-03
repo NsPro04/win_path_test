@@ -141,5 +141,5 @@ int wmain() {
   test0();
 
   std::cin.get();
-  return 1;
+  return 0;
 };
