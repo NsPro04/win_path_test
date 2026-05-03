@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="create_hard_link/create_hard_link.vcxproj" />
+  <Project Path="run/run.vcxproj" />
+  <Project Path="test/test.vcxproj" />
+</Solution>
