@@ -4,5 +4,6 @@
   </Configurations>
   <Project Path="create_hard_link/create_hard_link.vcxproj" />
   <Project Path="run/run.vcxproj" />
-  <Project Path="test/test.vcxproj" />
+  <Project Path="test_loop/test_loop.vcxproj" />
+  <Project Path="test_once/test_once.vcxproj" />
 </Solution>

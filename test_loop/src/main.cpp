@@ -126,19 +126,13 @@ void print_exe_path() {
   };
 };
 
-void test0() {
-  print_exe_path();
-};
+int wmain() {
+  SetConsoleOutputCP(CP_UTF8);
 
-void test1() {
   while (true) {
     print_exe_path();
     Sleep(1000);
   };
-};
-
-int wmain() {
-  test0();
 
   std::cin.get();
   return 0;
