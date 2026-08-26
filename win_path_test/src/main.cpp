@@ -20,7 +20,13 @@ void print_exe_path() {
 
   std::println("GetModuleFileNameW: {}", test::libloaderapi::GetModuleFileNameW());
 
-  std::println("K32GetMappedFileNameW: {}", test::psapi::K32GetMappedFileNameW(&print_exe_path));
+  try {
+    std::println("K32GetMappedFileNameW: {}", test::psapi::K32GetMappedFileNameW(&print_exe_path));
+  } catch (const std::exception &e) {
+    std::println("K32GetMappedFileNameW last error: {}", GetLastError());
+
+    SetLastError(0);
+  }
   std::println("K32GetModuleBaseNameW: {}", test::psapi::K32GetModuleBaseNameW());
   std::println("K32GetModuleFileNameExW: {}", test::psapi::K32GetModuleFileNameExW());
   std::println("K32GetProcessImageFileNameW: {}", test::psapi::K32GetProcessImageFileNameW());
