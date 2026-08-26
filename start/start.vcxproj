@@ -22,7 +22,7 @@
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectGuid>{14F8BCC1-AF72-073F-1776-D0E6071BE443}</ProjectGuid>
+    <ProjectGuid>{4DA9C004-8A09-FD1F-6484-F9990208C270}</ProjectGuid>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -57,7 +57,7 @@
     <ClCompile>
       <SDLCheck>true</SDLCheck>
       <WarningLevel>Level4</WarningLevel>
-      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard>stdcpp23</LanguageStandard>
       <ConformanceMode>true</ConformanceMode>
       <DisableLanguageExtensions>true</DisableLanguageExtensions>
     </ClCompile>
@@ -85,4 +85,7 @@
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(SolutionDir)\third_party\conan\conandeps.props')" Project="$(SolutionDir)\third_party\conan\conandeps.props" />
+  </ImportGroup>
 </Project>

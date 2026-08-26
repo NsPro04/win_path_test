@@ -1,17 +1,14 @@
-﻿#include <fstream>
-#include <stdexcept>
-#include <format>
-#include <iostream>
+﻿#include <iostream>
+#include <print>
+#include <fstream>
 #include <string_view>
 #include <filesystem>
 
 #include "windows.h"
 
-namespace ns {
-using u8ifstream = std::basic_ifstream<char8_t, std::char_traits<char8_t>>;
-};
-
 int wmain() try {
+  using u8ifstream = std::basic_ifstream<char8_t, std::char_traits<char8_t>>;
+
   constexpr std::u8string_view txt_path_u8 = u8"./path.txt";
 
   const std::string_view txt_path_sv(reinterpret_cast<const char *>(txt_path_u8.data()), txt_path_u8.size());
@@ -26,7 +23,7 @@ int wmain() try {
 
   std::u8string dest_path_u8(file_size, u8'\0');
 
-  ns::u8ifstream(txt_path, std::ios::binary).read(dest_path_u8.data(), file_size);
+  u8ifstream(txt_path, std::ios::binary).read(dest_path_u8.data(), file_size);
 
   {
     const std::string_view dest_path_sv(reinterpret_cast<const char *>(dest_path_u8.data()), dest_path_u8.size());
@@ -49,8 +46,8 @@ int wmain() try {
 
   return 0;
 } catch (const std::exception &e) {
-  std::cout << std::format("Exception: {}", e.what()) << std::endl;
+  std::println("Exception: {}", e.what());
 
   std::cin.get();
   return 1;
-};
+}

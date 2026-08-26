@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\test">
+      <UniqueIdentifier>{6951f56d-ad75-4900-b651-1543d56fc2ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\test\psapi">
+      <UniqueIdentifier>{55669b46-f5ad-4e0a-b5a2-d44488533cbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\test\libloaderapi">
+      <UniqueIdentifier>{fe1b5eaa-0f8e-4f6f-9143-1e8676c7db67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\test\winbase">
+      <UniqueIdentifier>{d834fb1e-61e3-46c6-9908-cab065271e2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\test">
+      <UniqueIdentifier>{a4019987-20c5-4005-aebc-a1b850c2e997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\test\winbase">
+      <UniqueIdentifier>{d5e15866-cef2-4639-af28-277d9096b146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\test\libloaderapi">
+      <UniqueIdentifier>{4d97df8e-3550-4415-890d-474ae1bac221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{2814cad0-4e57-4710-9d98-a76e0e1f7db2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\test\psapi">
+      <UniqueIdentifier>{3829c884-8cc0-492c-af10-33946aa46806}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\winbase\QueryFullProcessImageNameW.cpp">
+      <Filter>Source Files\test\winbase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\libloaderapi\GetModuleFileNameW.cpp">
+      <Filter>Source Files\test\libloaderapi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\psapi\K32GetMappedFileNameW.cpp">
+      <Filter>Source Files\test\psapi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\psapi\K32GetModuleBaseNameW.cpp">
+      <Filter>Source Files\test\psapi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\psapi\K32GetModuleFileNameExW.cpp">
+      <Filter>Source Files\test\psapi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\psapi\K32GetProcessImageFileNameW.cpp">
+      <Filter>Source Files\test\psapi</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include=".manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\test\psapi\K32GetMappedFileNameW.h">
+      <Filter>Header Files\test\psapi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\test\psapi\K32GetModuleBaseNameW.h">
+      <Filter>Header Files\test\psapi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\test\psapi\K32GetModuleFileNameExW.h">
+      <Filter>Header Files\test\psapi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\test\psapi\K32GetProcessImageFileNameW.h">
+      <Filter>Header Files\test\psapi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\test\libloaderapi\GetModuleFileNameW.h">
+      <Filter>Header Files\test\libloaderapi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\test\winbase\QueryFullProcessImageNameW.h">
+      <Filter>Header Files\test\winbase</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utils\utils.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
