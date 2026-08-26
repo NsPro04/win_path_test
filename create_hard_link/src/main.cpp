@@ -8,7 +8,7 @@ int wmain() try {
   using u8ifstream = std::basic_ifstream<char8_t, std::char_traits<char8_t>>;
 
   constexpr std::u8string_view txt_path_u8 = u8"./path.txt";
-  constexpr std::u8string_view exe_path_u8 = u8"./test.exe";
+  constexpr std::u8string_view exe_path_u8 = u8"./win_path_test.exe";
 
   const std::string_view txt_path_sv(reinterpret_cast<const char *>(txt_path_u8.data()), txt_path_u8.size());
   const std::string_view exe_path_sv(reinterpret_cast<const char *>(exe_path_u8.data()), exe_path_u8.size());
