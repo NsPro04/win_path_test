@@ -38,7 +38,7 @@
       <UniqueIdentifier>{2814cad0-4e57-4710-9d98-a76e0e1f7db2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\test\psapi">
-      <UniqueIdentifier>{3829c884-8cc0-492c-af10-33946aa46806}</UniqueIdentifier>
+      <UniqueIdentifier>{901d6944-073f-4fd5-8a96-9f122dd60b7a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -51,16 +51,16 @@
     <ClCompile Include="src\test\libloaderapi\GetModuleFileNameW.cpp">
       <Filter>Source Files\test\libloaderapi</Filter>
     </ClCompile>
-    <ClCompile Include="src\psapi\K32GetMappedFileNameW.cpp">
+    <ClCompile Include="src\test\psapi\K32GetMappedFileNameW.cpp">
       <Filter>Source Files\test\psapi</Filter>
     </ClCompile>
-    <ClCompile Include="src\psapi\K32GetModuleBaseNameW.cpp">
+    <ClCompile Include="src\test\psapi\K32GetModuleBaseNameW.cpp">
       <Filter>Source Files\test\psapi</Filter>
     </ClCompile>
-    <ClCompile Include="src\psapi\K32GetModuleFileNameExW.cpp">
+    <ClCompile Include="src\test\psapi\K32GetModuleFileNameExW.cpp">
       <Filter>Source Files\test\psapi</Filter>
     </ClCompile>
-    <ClCompile Include="src\psapi\K32GetProcessImageFileNameW.cpp">
+    <ClCompile Include="src\test\psapi\K32GetProcessImageFileNameW.cpp">
       <Filter>Source Files\test\psapi</Filter>
     </ClCompile>
   </ItemGroup>
