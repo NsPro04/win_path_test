@@ -12,7 +12,7 @@ std::string test::psapi::K32GetModuleFileNameExW(void *hModule, void *process) {
   while (true) {
     const DWORD path_size = ::K32GetModuleFileNameExW(process, reinterpret_cast<HMODULE>(hModule), path_wstr.data(), path_wstr.size());
 
-    if (!path_size) throw std::exception("!K32GetMappedFileNameW");
+    if (!path_size) throw std::exception("!K32GetModuleFileNameExW");
 
     if ((path_size + 1uz) < path_wstr.size()) {
       path_wstr.erase(path_size);
